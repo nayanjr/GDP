@@ -1,0 +1,18 @@
+{%include "header.html" %}
+
+			  {% if msg %}
+
+		<script>document.getElementById("message").value = "Email successfully sent...please verify"</script>
+
+    {% endif %}
+
+<div>
+  <br>
+  <h1>Confirmation Email Sent</h1> <br> 
+  <p>we have sent you an email for resetting password. please check your email and follow the link to reset your password.</p><br>
+  <p>Please <a style="text-decoration: underline;color: #007bff;" href="/user">Click Here</a> to sign in if you already reset your password. </p><br><br><br><br><br><br>
+  <br><br><br><br><br>
+
+</div>
+
+{%include "footer.html" %}

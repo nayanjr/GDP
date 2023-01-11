@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Drowsiness Detection</title>
+
+
+    <link rel="shortcut icon" href="{{ url_for('static',filename='assets/images/fav.jpg')}}">
+    <link rel="stylesheet" href=" {{ url_for('static',filename='assets/css/bootstrap.min.css')}} ">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/fontawsom-all.min.css')}} ">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/plugins/slider/css/owl.carousel.min.css')}} ">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/plugins/slider/css/owl.theme.default.css')}} ">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/style.css')}}" />
+    
+</head>
+
+<body>
+    <div class="container body-container">
+        <!-- ################# Header Starts Here#######################--->
+        
+        <header>
+            
+            <div class="row header-top">
+                <br>
+                    <div class="col-lg-7 col-md-12 left-item">
+                        <ul>
+    
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block right-item">
+                        <ul>
+                            <li><a href="{{ url_for('index') }}" style="font-size: 1.3rem; color: white">Home</a></li>
+                            <li><a href="{{ url_for('user') }}" style="color:white; font-size: 1.3rem">User</a></li>
+
+                        </ul>
+                    </div>
+
+            </div>
+            <div  class=" ">
+
+               
+
+        </div>
+        <div>
+            <div class="m-stage-slide ng-scope" data-ng-controller="stageV2">
+                <figure>
+                    <div style="width:100%;">
+                        <img style="color:#efeff0;" src="{{ url_for('static',filename='assets/images/blogo.jpg')}}" draggable="false" alt="Driver drowsiness detection">
+                    </div>
+                </figure>
+            </div>
+        </header>
+
+        
+
+        <br>
+        
+       

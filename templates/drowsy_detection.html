@@ -1,0 +1,54 @@
+{%include "uheader.html" %}
+
+
+<div class="page-nav no-margin row" xmlns="http://www.w3.org/1999/html">
+                   <div class="container">
+                       <div class="row">
+                           <h2>Drowsy Detection</h2>
+                           <ul>
+                               <li> <a href="/user"><i class="fas fa-home"></i> Home</a></li>
+                               <li><i class="fas fa-angle-double-right"></i> Drowsy Detection</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+
+<div style="margin-top:0px;" class="row">
+
+      </div>
+                    <center>
+                        <img class="img"  src="{{ url_for('video_feed') }}" width="500px"><br><br>
+
+                        <a class="link" href="/userlogin_check">Stop Alarm</a>
+                        
+                    </center>
+            <form action="userlogin_check" method="post">
+      <div class="row contact-rooo">
+
+           <div class="row w-100">
+
+
+            <div style="padding:20px" class="col-sm-8">
+
+                <div class="row">
+                    <div class="col-sm-8">
+<center>
+                        <!--<img class="img"  src="{{ url_for('video_feed') }}" width="700px">-->
+                    </center></div>
+                </div>
+
+
+            </div>
+
+
+            </div>
+        </div>
+</form>
+
+
+
+
+
+
+
+{%include "footer.html" %}

@@ -1,0 +1,131 @@
+{%include "header.html" %}
+
+<!--
+<div class="page-nav no-margin row" xmlns="http://www.w3.org/1999/html">
+                   <div class="container">
+                       <div class="row">
+                           <h2>User Registration</h2>
+                           <ul>
+                               <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                               <li><i class="fas fa-angle-double-right"></i> Registration</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+-->
+
+			  {% if msg %}
+
+		<script>alert('User Id with email already exists. Please try to login or reset your password!')</script>
+
+    {% endif %}
+<div style="margin-top:0px;" class="row">
+    
+      </div>
+      <h1 style="padding:20px;text-align: center;"><b>Registration Form</b></h1>
+<form action="user_register" method="post">
+    
+      <div class="row contact-rooo">
+
+           <div class="row w-100">
+
+            <div style="padding:20px" class="col-sm-8">
+
+                <div style="margin-top:10px;" class="row">
+                    <div class="required col-sm-8">
+                         <label>Full Name :</label>
+                        <input type="text" placeholder="Enter Name" name="firstname" class="form-control input-sm" required ></div>
+                </div>
+
+                <div style="margin-top:10px;" class="row">
+                    <div class="required col-sm-8">
+                        <label>User ID :</label>
+                       <input type="text" placeholder="Enter User ID" name="lastname" class="form-control input-sm" required ></div>
+               </div>
+
+               <div style="margin-top:10px;" class="row">
+                <div class="col-sm-8">
+                    <label>Gender :</label>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female 
+                    <input type="radio" name="gender" value="other"> other </div>
+               </div>
+               <div style="margin-top:10px;" class="row">
+                 <div class="col-sm-8">
+                        <label for="start">DOB</label>       
+                        <input type="date" id="start" name="dob" value="2018-07-22"
+                        min="1990-01-01" max="2030-12-31" ></div>
+                </div>
+                <div style="margin-top:10px;" class="row">
+                    <div class="required col-sm-8">
+                           <label>Email :</label>
+                          <input type="email" placeholder="Enter Email Id" name="email" class="form-control input-sm" required ></div>
+                  </div>
+                <div style="margin-top:10px;" class="row">
+
+                    <div class="required col-sm-8">
+                        <label>Password :</label>
+                        <input type="password" name="pwd" placeholder="Enter Password" class="form-control input-sm"  required></div>
+                </div>
+                <div style="margin-top:10px;" class="row">
+                    <div class="required col-sm-8">
+                           <label>Height :</label>
+                          <input type="number" placeholder="Enter your height: " step="0.1" name="height" class="form-control input-sm" required ></div>
+                  </div>
+                  <div style="margin-top:10px;" class="row">
+                    <div class="required col-sm-8">
+                           <label>Age :</label>
+                          <input type="number" placeholder="Enter your age:"  name="age" class="form-control input-sm" required ></div>
+                  </div>
+                  <div style="margin-top:10px;" class="row">
+                    <div class="required col-sm-8">
+                           <label>Weight :</label>
+                          <input type="number" placeholder="Enter your weight:" name="weight" class="form-control input-sm" required ></div>
+                  </div>
+                
+ <div style="margin-top:10px;" class="row">
+             <div class="required col-sm-8">
+                         <label>Mobile Number :</label>
+                        <input type="text" pattern="[0-9]{10,10}" placeholder="Enter Mobile Number" name="mno" class="form-control input-sm" required ></div>
+                </div>
+                 <div style="margin-top:10px;" class="row">
+
+
+                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                    <div class="col-sm-8">
+                     <button class="btn btn-danger btn-sm">&nbsp;Register&nbsp;</button>
+                     <button class = "btn btn-danger btn-sm"><a style="color: white;" href="user">&nbsp;Cancel&nbsp;</a></button>
+                     
+<br><br>   
+
+                    </div>
+                    
+                </div>
+            </div>
+            
+             <div class="col-sm-3">
+
+                  <div style="margin:5px" class="serv">
+
+              <img src="{{ url_for('static',filename='assets/images/register.png')}}" alt="">
+
+
+
+           </div>
+          
+
+         </div>
+         
+
+            </div>
+        </div>
+        
+
+</form>
+
+
+
+
+
+
+{%include "footer.html" %}
